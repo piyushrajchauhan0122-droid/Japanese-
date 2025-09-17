@@ -1,198 +1,121 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="hi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Japanese Movies: A Gateway to a World of Masterful Storytelling
-
-Japanese cinema stands as a towering pillar of global film culture, renowned for its profound storytelling, artistic innovation, and unique ability to blend deep human emotion with striking visual poetry. For decades, it has captivated international audiences, offering a diverse range of genres—from serene and contemplative dramas to pulse-pounding action and iconic horror. The greatness of Japanese movies lies in their meticulous craftsmanship. Directors like Akira Kurosawa, Hayao Miyazaki, and Yasujirō Ozu are not just filmmakers; they are visionaries whose works are studied and celebrated worldwide for their technical precision and narrative depth.
-
-A defining trait of Japanese films is their powerful focus on human nature and social themes. Whether it’s the samurai epics of Kurosawa, which explore honor, loyalty, and moral conflict, or the enchanting animated worlds of Studio Ghibli, which emphasize environmentalism, childhood innocence, and resilience, each movie invites viewers into emotionally rich experiences. Japanese horror, such as "Ringu" (The Ring) or "Ju-On" (The Grudge), redefined the genre with psychological terror and slow-building tension rather than relying on gore, influencing filmmakers across Hollywood and beyond.
-
-Moreover, Japanese cinema is celebrated for its breathtaking visual composition. Every frame is crafted with the care of a painting, balancing tradition with modernity. Whether it’s the tranquil beauty of cherry blossoms in a historical drama or the cyberpunk neon-lit streets of Tokyo in a sci-fi thriller, the visuals are always purposeful and immersive.
-
-For anyone eager to explore cinema beyond mainstream Hollywood, Japanese films offer unforgettable stories filled with meaning, beauty, and cultural depth. From the masterworks of the past to the dynamic creations of today’s directors, Japan’s film industry continues to inspire, challenge, and move audiences around the world.
-
----
-
-Keywords for SEO:
-Japanese movies, best Japanese films, Akira Kurosawa, Hayao Miyazaki, Studio Ghibli, Japanese horror movies, samurai movies, Japanese cinema history, Japanese directors, watch Japanese films online, Japanese culture movies, classic Japanese films, modern Japanese cinema, Japanese anime movies, top Japanese films.">
-  <title>JAPANESE-MOVIES without Blur</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="google-site-verification" content="8HoOid_xUtj8oOgNFe2Qtx7v-8qDsGzHzi7va9eFPkE" />
+  <title>Anime crunchy India - RareToons Style Video Site</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #000; /* Black background */
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#94a3b8;--accent:#06b6d4}
+    html,body{height:100%;margin:0;font-family:Inter, system-ui, sans-serif;background:linear-gradient(180deg,#071224 0%, #071826 100%);color:#e6eef6}
+    .wrap{max-width:1100px;margin:30px auto;padding:20px}
+
+    /* ✅ Sticky Site Header */
+    .site-header {
+      position:sticky;
+      top:0;
+      z-index:100;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:14px 20px;
+      background:rgba(11,18,32,0.9);
+      border-bottom:1px solid rgba(255,255,255,0.06);
+      backdrop-filter:blur(8px);
+      border-radius:12px;
+      margin-bottom:20px;
+      box-shadow:0 4px 16px rgba(2,6,23,0.5);
     }
-    header {
-      background: #222;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      border-bottom: 5px solid #ff4500;
-    }
-    header img {
-      height: 60px;
-      vertical-align: middle;
-    }
-    header h1 {
-      display: inline-block;
-      margin-left: 10px;
-    }
-    .container {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr); /* Hamesha 2 cards per row */
-      gap: 15px;
-      padding: 15px;
-    }
-    .card {
-      background: white;
-      border: 2px solid red; /* Red border */
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
-      overflow: hidden;
-      transition: 0.3s;
-    }
-    .card:hover {
-      transform: scale(1.03);
-    }
-    .card img {
-      width: 100%;
-      aspect-ratio: 16 / 9; /* Force 16:9 ratio */
-      object-fit: cover; /* Crop image properly */
-      display: block;
-    }
-    .card h2 {
-      font-size: 18px;
-      margin: 8px;
-    }
-    .card p {
-      margin: 8px;
-      font-size: 13px;
-      color: #555;
-    }
-    .card a {
-      display: block;
-      text-align: center;
-      background: #ff4500;
-      color: white;
-      padding: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      border-top: 2px solid red;
-    }
-    .card a:hover {
-      background: #e63e00;
-    }
+    .site-header .logo {font-size:20px;font-weight:700;color:var(--accent);}
+    .site-header .nav {display:flex;gap:20px;}
+    .site-header .nav a {text-decoration:none;font-size:14px;color:#e6eef6;transition:color .2s;}
+    .site-header .nav a:hover {color:var(--accent);}
+
+    /* ✅ Responsive Grid */
+    .grid{display:grid;grid-template-columns:repeat(auto-fill, minmax(200px, 1fr));gap:18px;}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.06));padding:10px;border-radius:12px;box-shadow:0 6px 24px rgba(2,6,23,0.6);display:flex;flex-direction:column;align-items:center;text-align:center}
+    .card img{width:100%;aspect-ratio:9/16;border-radius:10px;display:block;object-fit:cover;margin:0 auto;}
+    .card a{margin-top:10px;padding:8px 12px;border-radius:8px;text-decoration:none;background:rgba(255,255,255,0.04);color:var(--accent);font-weight:600;font-size:14px;}
+    .meta{width:100%;display:flex;flex-direction:column;align-items:center;padding-top:8px}
+    .meta .title{font-size:14px;color:#dbeafe;font-weight:bold}
+    .meta .badge{font-size:12px;color:var(--muted)}
+
+    .description{margin-top:30px;line-height:1.7;font-size:15px;color:#cbd5e1}
+    .description h2{color:var(--accent);margin-bottom:10px}
+    .description p{margin-bottom:14px}
+
+    footer{margin-top:28px;padding:14px 10px;border-top:1px solid rgba(255,255,255,0.03);text-align:center;color:var(--muted);font-size:13px}
   </style>
 </head>
 <body>
-  <header>
-    <img src="https://i.postimg.cc/kgSWGNFD/gate-torii-shrine-japaness-style-icon-png.png" alt="Logo">
-    <h1>JAPANESE UNCENSORED MOVIES</h1>
-    <p>Scroll down to watch more</p>
-    <p>This website is free of JAPANESE UNCENSORED MOVIES</p>
-    <p>Watch and Enjoy it</p>
-  </header>
+  <div class="wrap">
+    <!-- ✅ Header -->
+    <header class="site-header">
+      <div class="logo">🎬 Anime crunchy India</div>
+      <nav class="nav">
+        <a href="#">Home</a>
+        <a href="#videoGrid">Videos</a>
+        <a href="#footer">Contact</a>
+      </nav>
+    </header>
 
-  <div class="container">
-    <!-- Cartoon 1 -->
-    <div class="card">
-      <img src="https://i.postimg.cc/jd9ZB2NN/1757094067.webp" width="100" height="200" alt="">
-      <a href="https://sextb.net/lr7cs7sur" target="_blank">Watch Now</a>
-    </div>
+    <main>
+      <section class="grid" id="videoGrid">
+        <!-- ✅ Demon Slayer Movie Card -->
+        <div class="card">
+          <img src="https://i.postimg.cc/nhL5FdPR/a-FRDH3-P7-TX61-FVGpa-Lh-Kr6-Qi-OC1.jpg" alt="Demon Slayer Movie Thumbnail" />
+          <a href="index1.html" class="watch">Watch Now</a>
+          <div class="meta">
+            <div class="title">✅ Download Demon Slayer: Kimetsu no Yaiba Infinity Castle (2025) Movie BluRay Full Movie (Hindi-Tamil-English) 480p & 720p & 1080p Qualities</div>
+            <div class="badge">Movie • Sub/Dub</div>
+          </div>
+        </div>
+      </section>
 
-    <!-- Cartoon 2 -->
-    <div class="card">
-      <img src="https://i.postimg.cc/7Y5hL7MQ/1757012777.webp" width="100" height="200" alt="Shinchan">
-      <a href="https://sextb.net/ekog9amaa" target="_blank">Watch Now</a>
-    </div>
+      <!-- ✅ Description Section -->
+      <section class="description">
+        <h2>Movie Info</h2>
+        <p>📰 Full Name: Demon Slayer: Kimetsu no Yaiba Infinity Castle (2025)<br>
+        Run Time: 2h 35m<br>
+        🕓 Release Year: (12 September) 2025<br>
+        🌟 Rating: PG – 7.4<br>
+        🎭 Genre: Animation, Action, Fantasy, Thriller<br>
+        🎬 Quality: (360p, 480p, 720p, 1080p FHD)<br>
+        Credit: Torrent<br>
+        🔊 Language: Hindi, Tamil</p>
 
-    <!-- Cartoon 3 -->
-    <div class="card">
-      <img src="https://i.postimg.cc/6p0pj09q/1756404358.webp" height="200" width="100"alt="Pokemon">
-      <a href="https://sextb.net/jsm4zx3v5" target="_blank">Watch Now</a>
-    </div>
-    <!-- Cartoon Card -->
-<div class="card">
-  <img src="https://i.postimg.cc/v8q7jrZP/1757004704.webp" height="200" width = "100"alt="porn">
-  <a href= "https://sextb.net/6z0tm47p8http"  target="_blank">Watch Now</a>
-</div>
-<!-- Cartoon Card -->
-<div class="card">
-  <img src="https://i.postimg.cc/Pq78XjP0/1648574053.webp" height="200" width = "100" alt="">
-  <a href="https://sextb.net/ure-016-rm" target="_blank">Watch Now</a>
-</div>
-<!-- Cartoon Card -->
-<div class="card">
-  <img src="https://i.postimg.cc/28C3f60V/1756400568.webp" height="200" width = "100" alt="">
-  <a href="https://sextb.net/61jh3rfuy" target="_blank">Watch Now</a>
-</div>
-<!-- Cartoon Card -->
-<div class="card">
-  <img src="https://i.postimg.cc/L8n9HZL6/1757012114.webp" height="200" width = "100" alt="">
-  <a href="https://sextb.net/nact-012-rm" target="_blank">Watch Now</a>
-</div>
-<!-- Cartoon Card -->
-<div class="card">
-  <img src="https://i.postimg.cc/W1FVRccd/1756400691.webp" height="200" width = "100" alt="MOVIES">
-  <a href="https://sextb.net/fg1dn6ded" target="_blank">Watch Now</a>
-</div>
-  <!-- Cartoon Card -->
-<div class="card">
-  <img src="https://i.postimg.cc/Y0K98zvn/1677263280.webp" height="200" width = "100" alt="">
-  <a href="https://sextb.net/dass-108-rm" target="_blank">Watch Now</a>
-</div>
-<!-- Cartoon Card -->
-<div class="card">
-  <img src="https://i.postimg.cc/s2skD1vN/1729304920.webp" height="200" width = "100" alt="">
-  <a href="https://sextb.net/7a2mi79ca" target="_blank">Watch Now</a>
-</div>
-<!-- Cartoon Card -->
-<div class="card">
-  <img src="https://i.postimg.cc/FFD8yswc/1696820545.webp" height="200" width = "100" alt="">
-  <a href="https://sextb.net/sdde-699-rm" target="_blank">Watch Now</a>
-</div>
-<!-- Cartoon Card -->
-<div class="card">
-  <img src="https://i.postimg.cc/PfRKfLB6/1713584286.webp" height="200" width = "100" alt="">
-  <a href="https://sextb.net/aldn-307-rm" target="_blank">Watch Now</a>
-</div>
-<!-- Cartoon Card -->
-<div class="card">
-  <img src="https://i.postimg.cc/63SRKZyn/1630211398.webp" height="200" width = "100" alt="">
-  <a href="https://sextb.net/m4ouwnugi" target="_blank">Watch Now</a>
-</div>
-<!-- Cartoon Card -->
-<div class="card">
-  <img src="https://i.postimg.cc/1Xq6dmc9/1663814453-1.webp" height="200" width = "100" alt="">
-  <a href="https://sextb.net/midv-191-rm" target="_blank">Watch Now</a>
-</div>
-<!-- Cartoon Card -->
-<div class="card">
-  <img src="https://i.postimg.cc/tTLnF008/1690532792.webp" height="200" width = "100" alt="">
-  <a href="https://sextb.net/brl127gxw" target="_blank">Watch Now</a>
-</div>
-<!-- Cartoon Card -->
-<div class="card">
-  <img src="https://i.postimg.cc/PrKrjG3h/1696298967.webp" height="200" width = "100" alt="">
-  <a href="https://sextb.net/uk50kd1y6" target="_blank">Watch Now</a>
-</div>
-<!-- Cartoon Card -->
-<div class="card">
-  <img src="https://i.postimg.cc/631LSbkh/1712368241.webp" height="200" width = "100" alt="">
-  <a href="https://sextb.net/fera-179-rm" target="_blank">Watch Now</a>
-</div>
-<!-- Cartoon Card -->
-<div class="card">
-  <img src="https://i.postimg.cc/44Pbryg3/1642740569.webp" height="200" width = "100" alt="">
-  <a href="https://sextb.net/venu-895-rm" target="_blank">Watch Now</a>
-</div>
-</div>
-<footer style="border-top:4px solid orange; text-align:center; padding:10px;">
- <p>© 2025 MyWebsite | Please support we to bring more JAPANESE-MOVIES</p>
-</footer>
+        <p><strong>Movie Story:</strong> The Demon Slayer Corps are drawn into the Infinity Castle, where Tanjiro, Nezuko, and the Hashira face terrifying Upper Rank demons in a desperate fight as the final battle against Muzan Kibutsuji begins.</p>
+
+        <h2>About Anime crunchy India</h2>
+        <p><strong>The best site to Watch/Download Anime & Cartoon in Hindi Dub for FREE</strong><br>
+        In Early 2025, realizing the scarcity of user-friendly platforms offering Hindi, Tamil, and Telugu-dubbed anime, we embarked on creating RareToonsIndia. Our aim was to revolutionize the anime streaming experience, addressing the deficiencies prevalent on existing platforms. Anime crunchy India acts as an aggregator, indexing content available on other platforms. It’s important to note that Anime crunchy India does not host any content; everything is sourced from third-party providers. We bear no responsibility for content hosted on external sites.</p>
+
+        <h3>1/ What’s Anime crunchy India?</h3>
+        <p>A haven for anime enthusiasts, offering a diverse array of anime titles dubbed in Hindi, Tamil, and Telugu, all accessible for free in high-definition quality. Additionally, users can download their favorite anime at no cost.</p>
+
+        <h3>2/ Is Anime crunchy India safe?</h3>
+        <p>Absolutely. Safety is paramount to us. We encourage users to promptly report any suspicious activities. However, please understand that advertisements are necessary for site maintenance.</p>
+
+        <h3>3/ What makes Anime crunchy India the best site to watch anime free online?</h3>
+        <ul>
+          <li>Extensive Content Library: Largest collection of Hindi/Tamil/Telugu dubbed anime</li>
+          <li>Timely Updates with latest releases</li>
+          <li>Intuitive User Interface for easy browsing</li>
+          <li>Device Compatibility for mobile & desktop</li>
+        </ul>
+
+        <p>If you seek a reliable and secure platform for free anime streaming, give Anime crunchy India a try. Spread the word and bookmark our site for future anime adventures.</p>
+      </section>
+    </main>
+
+    <footer id="footer">
+      &copy; <span id="year"></span> Anime crunchy India. All rights reserved.
+    </footer>
+  </div>
+
+  <script>
+    // footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
